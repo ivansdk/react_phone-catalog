@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "./static/css/main.419b1bab.css",
+    "main.js": "./static/js/main.275d9e48.js",
+    "static/media/accessories.png": "./static/media/accessories.ceac5a16c668432a34a0.png",
+    "static/media/phones.png": "./static/media/phones.eca9371ac30e1f63b6f4.png",
+    "static/media/tablets.png": "./static/media/tablets.a1aff0fe1c1693fcea55.png",
+    "index.html": "./index.html",
+    "main.419b1bab.css.map": "./static/css/main.419b1bab.css.map",
+    "main.275d9e48.js.map": "./static/js/main.275d9e48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.419b1bab.css",
+    "static/js/main.275d9e48.js"
+  ]
+}
