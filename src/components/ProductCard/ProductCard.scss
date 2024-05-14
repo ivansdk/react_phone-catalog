@@ -1,0 +1,33 @@
+@import "../../scss/variables";
+
+.product {
+  width: 272px;
+  height: 507px;
+  border: 1px solid $gray-element;
+  background: #fff;
+  padding: 24px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border: 1px solid black;
+    box-shadow: 3px 8px 12px $gray-border;
+  }
+
+  &__img {
+    display: block;
+    width: 208px;
+    height: 208px;
+    object-fit: contain;
+    margin: 0 8px;
+  }
+
+  &__title {
+    margin-top: 24px;
+    white-space: normal;
+    color: $gray-primary;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    height: 40px;
+  }
+}

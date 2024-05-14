@@ -1,0 +1,77 @@
+@import "../../scss/variables";
+
+.nav {
+  height: 100%;
+
+  @media (max-width:770px) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    height: 100%;
+
+    &_vertical {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    margin-right: 64px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (max-width: 1050px) {
+      margin-right: 30px;
+    }
+
+    &_center {
+      margin: 0 auto;
+    }
+  }
+  &__link {
+    color: $gray-secondary;
+    display: flex;
+    position: relative;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 11px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+
+    &_big {
+      font-size: 25px;
+      line-height: 50px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 95%;
+      left: 0;
+      width: 0;
+      transition: all 0.2s ease-in;
+      height: 3px;
+      background-color: $gray-primary;
+    }
+
+    &:hover {
+      color: $gray-primary;
+    }
+
+    &-active {
+      color: $gray-primary;
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}

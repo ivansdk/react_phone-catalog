@@ -1,0 +1,78 @@
+@import "../../scss/variables";
+
+.banner-slider {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 1040px;
+
+    @media (max-width: 1200px) {
+      width: 800px;
+    }
+
+    @media (max-width: 940px) {
+      width: 600px;
+    }
+
+    @media (max-width: 770px) {
+      width: 95%;
+    }
+  }
+
+  &__list {
+    white-space: nowrap;
+
+    & img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+
+  &__btn {
+    background: #fff;
+    border: 1px solid $gray-border;
+    width: 32px;
+    height: 400px;
+
+    &:hover {
+      border: 1px solid #000;
+    }
+
+    @media (max-width: 770px) {
+      display: none;
+    }
+
+    &_right {
+      background: url("../../icons/arrow-right.png") center center no-repeat;
+    }
+
+    &_left {
+      background: url("../../icons/arrow-left.png") center center no-repeat;
+    }
+  }
+
+  &__dots {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__dot {
+    width: 15px;
+    height: 7px;
+    background: rgb(213, 213, 213);
+
+    &_active {
+      background: rgb(31, 31, 31);
+    }
+  }
+}

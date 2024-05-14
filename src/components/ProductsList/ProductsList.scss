@@ -1,0 +1,37 @@
+@import "../../scss/variables";
+
+.products {
+  padding: 0 0 40px;
+
+  &__title {
+    margin-top: 40px;
+  }
+
+  &__count {
+    margin-top: 8px;
+  }
+
+  &__wrapper {
+    margin-top: 40px;
+  }
+
+  &__filters {
+    display: flex;
+
+    & > .dropdown {
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__grid {
+    margin-top: 24px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 272px);
+    gap:40px, 16px
+  }
+}

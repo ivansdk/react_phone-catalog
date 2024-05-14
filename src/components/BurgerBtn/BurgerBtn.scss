@@ -1,0 +1,21 @@
+@import "../../scss/variables";
+
+.burger {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  box-shadow: -1px 0 0 0 #e2e6e9;
+  background: white;
+
+  @media (max-width: 770px) {
+    display: flex;
+  }
+  
+  &__icon {
+    width: 30px;
+    height: 30px;
+    background: url("../../icons/burger.png");
+  }
+}

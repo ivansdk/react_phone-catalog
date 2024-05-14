@@ -1,0 +1,75 @@
+@import "../../scss/variables";
+
+.icon-wrapper {
+  position: relative;
+  background: white;
+}
+
+.header-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  box-shadow: -1px 0 0 0 #e2e6e9;
+
+  @media (max-width: 770px) {
+    display: none;
+  }
+
+  &_witout-shadow {
+    box-shadow: none;
+  }
+
+  & svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 95%;
+    left: 0;
+    width: 0;
+    transition: all 0.2s ease-in;
+    height: 3px;
+    background-color: $gray-primary;
+  }
+
+  &:hover {
+    &::before {
+      background-color: $gray-secondary;
+      width: 100%;
+    }
+  }
+
+  &_active {
+    &::before {
+      width: 100%;
+    }
+
+    &:hover {
+      &::before {
+        background-color: $gray-primary;
+      }
+    }
+  }
+}
+
+.couter {
+  width: 11px;
+  height: 11px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  color: white;
+  font-size: 9px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

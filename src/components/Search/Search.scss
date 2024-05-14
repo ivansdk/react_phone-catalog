@@ -1,0 +1,45 @@
+@import "../../scss/variables";
+
+.search {
+  height: 100%;
+  background: #fff;
+  box-shadow: -1px 0 0 0 #e2e6e9;
+  display: flex;
+  justify-content: space-between;
+
+  &__input {
+    padding-left: 22px;
+    color: $gray-primary;
+    font-size: 14px;
+    font-weight: 600;
+
+    &::placeholder {
+      color: #b4bdc3;
+    }
+
+    @media (max-width: 1050px) {
+      width: 0;
+      padding: 0;
+    }
+
+    @media (max-width: 1050px) {
+      &_active {
+        width: unset;
+        padding-left: 16px;
+      }
+    }
+  }
+
+  &__btn {
+    width: 64px;
+    background-color: #fff;
+
+    &_clear {
+      background: url("../../icons/search_clean.png") center center no-repeat;
+    }
+
+    &_search {
+      background: url("../../icons/search.png") center center no-repeat;
+    }
+  }
+}

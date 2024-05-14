@@ -1,0 +1,15 @@
+.favorites {
+  margin: 40px 0 80px;
+
+  &__subtitle {
+    margin-top: 8px;
+  }
+
+  &__products {
+    margin-top: 24px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 272px);
+    gap: 40px, 16px;
+  }
+}

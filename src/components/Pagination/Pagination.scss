@@ -1,0 +1,59 @@
+@import "../../scss/variables";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  &__page-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid $gray-border;
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &_active {
+      background: #000;
+      & a {
+        color: #fff;
+      }
+    }
+
+    &_disabled {
+      cursor: no-drop;
+      border: 1px solid $gray-element;
+      pointer-events: none;
+
+      & svg {
+        & path {
+          fill: #b4bdc4;
+        }
+      }
+    }
+
+    &_arrow-left {
+      margin-right: 16px;
+    }
+    &_arrow-right {
+      margin-left: 8px;
+    }
+  }
+
+  &__page-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+}

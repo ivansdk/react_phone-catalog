@@ -1,1 +1,57 @@
-// not empty
+@import "./scss/nullstyle";
+@import "./scss/variables";
+
+iframe {
+  display: none;
+}
+
+body {
+  font-family: Mont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  width: 1136px;
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    width: 900px;
+  }
+
+  @media (max-width: 940px) {
+    width: 700px;
+  }
+
+  @media (max-width: 770px) {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.title {
+  color: $gray-primary;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.32px;
+}
+
+.subtitle {
+  color: $gray-secondary;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}

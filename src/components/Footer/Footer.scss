@@ -1,0 +1,29 @@
+@import "../../scss/variables";
+
+.footer {
+  height: 96px;
+  background: #fff;
+  box-shadow: 0 -1px 0 0 #e2e6e9;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    
+    @media (max-width: 580px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &-nav__item {
+    @media (max-width: 580px) {
+      margin: 4px;
+    }
+  }
+}

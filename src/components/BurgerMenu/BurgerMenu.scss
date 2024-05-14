@@ -1,0 +1,50 @@
+@import "../../scss/variables";
+
+.menu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  background: white;
+  padding: 20px;
+  transition: top 0.3s ease;
+
+  &_active {
+    top: 0;
+  }
+
+  &__close {
+    background: white;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+
+  &__wrapper {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icons {
+    margin-top: 20px;
+    display: flex;
+  }
+}

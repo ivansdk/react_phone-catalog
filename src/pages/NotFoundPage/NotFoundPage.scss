@@ -1,0 +1,29 @@
+.page-err {
+  margin-top: 40px;
+
+  &__title {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 45px;
+    text-transform: capitalize;
+    line-height: normal;
+
+    @media (max-width: 400px) {
+      font-size: 34px;
+    }
+  }
+
+  &__img {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+
+    @media (max-width: 900px) {
+      width: 500px;
+    }
+
+    @media (max-width: 550px) {
+      width: 290px;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import "../../scss/variables";
+
+.slider {
+  margin-top: 70px;
+  margin-bottom: 80px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  &__buttons {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    background: white;
+    width: 32px;
+    height: 32px;
+    border: 1px solid $gray-border;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      border: 1px solid #000;
+    }
+
+    &_left {
+      background: url("../../icons/arrow-left.png") center center no-repeat;
+
+      &_disabled {
+        background: url("../../icons/arrow-left-disabled.png") center center
+          no-repeat;
+        border: 1px solid $gray-element;
+
+        &:hover {
+          border: 1px solid $gray-element;
+          cursor: no-drop;
+        }
+      }
+    }
+
+    &_right {
+      background: url("../../icons/arrow-right.png") center center no-repeat;
+
+      &_disabled {
+        background: url("../../icons/arrow-right-disabled.png") center center
+          no-repeat;
+        border: 1px solid $gray-element;
+
+        &:hover {
+          border: 1px solid $gray-element;
+          cursor: no-drop;
+        }
+      }
+    }
+  }
+
+  &__container {
+    overflow: hidden;
+    margin: 0 auto;
+
+    & div.product {
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    white-space: nowrap;
+  }
+}

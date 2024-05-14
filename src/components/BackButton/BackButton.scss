@@ -1,0 +1,28 @@
+@import "../../scss/variables";
+
+.back {
+  margin: 40px 0 16px;
+
+  &__wrapper {
+    background: transparent;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: $gray-secondary;
+    font-size: 12px;
+    font-weight: 600;
+
+    &:hover {
+      color: $gray-primary;
+    }
+  }
+
+  &__arrow {
+    background: url("../../icons/chevron_arrow_right.png");
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+}

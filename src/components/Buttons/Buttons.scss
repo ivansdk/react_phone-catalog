@@ -1,0 +1,56 @@
+@import "../../scss/variables";
+
+.btns {
+  display: flex;
+  margin-top: 16px;
+
+  &__btn {
+    width: 176px;
+    height: 40px;
+    background: $gray-primary;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 8px;
+    transition: all 0.5s ease;
+
+    &_big {
+      width: 263px;
+      height: 48px;
+    }
+
+    &:hover {
+      box-shadow: 2px 2px 8px $gray-border;
+    }
+
+    &_active {
+      background: white;
+      color: #27ae60;
+      border: 1px solid black;
+    }
+  }
+
+  &__favorites {
+    background: url("../../icons/heart.png") center center no-repeat;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $gray-border;
+    transition: all 0.3s ease-in;
+
+    &_big {
+      width: 48px;
+      height: 48px;
+    }
+
+    &_active {
+      background-image: url("../../icons/heart-red.png");
+    }
+
+    &:hover {
+      border: 1px solid black;
+    }
+  }
+}
